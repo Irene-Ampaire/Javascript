@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor functions</title>
+</head>
+<body>
+    <h1>Js objects-constructor functions</h1>
+    <p id="demo"></p>
+    <p id="dem"></p>
+    <script>
+        function person (first, last, age, color){
+        this.firstName = first;
+        this.lastName = last;
+        this.age = 19;
+        this.eyeColor = color;
+        this.fullName = function(){
+            return this.firstName + this.lastName};
+        };
+        const myself = new person("Ampaire", "Irene", 25, "Pink");
+        myself.nation = "India";
+    document.getElementById("demo").innerHTML = "I, " + myself.fullName() + " is " + myself.age + " years old." + " I stay in " + myself.nation;
+    
+    
+    
+    
+    </script>
+</body>
+</html>

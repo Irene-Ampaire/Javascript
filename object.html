@@ -8,9 +8,27 @@
 <body>
     <h1>Js objects</h1>
     <p id="demo"></p>
+    <p id="dem"></p>
     <script>
         const car = {name:"Fiat", model:"2024", engine:"V8"}
-        document.getElementById("demo").innerHTML = "This car is of type" + car.name + "and of model" + car.model;
+        document.getElementById("demo").innerHTML = "This car is of type " +car.name +" and of model " + car.model;
+    const person = {
+        firstName: "John",
+        lastName: "Dan",
+        Age: 19,
+        myCars: {
+            car1: "Ford",
+            car2: "Sorento",
+            car3: "benz",
+        }
+
+    };
+    const myArray = Object.values(person);
+    document.getElementById("dem").innerHTML = myArray;
+    
+    
+    
+    
     </script>
 </body>
 </html>
